@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grils Cafe</title>
+    <link rel="shortcut icon" href="./image/th (6).jfif" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <div class="container col-lg-6 col-md-12 col-sm-12">
+            <h1 class="text-center">Grils Cafe</h1>
+             <label for="prodectName" class="fs-5">Prodect Name:</label>
+             <input id="prodectName" type="text" class="form-control mb-2" placeholder="Prodect Name">
+
+             <label for="prodectprice" class="fs-5">Prodect Price:</label>
+             <input id="prodectprice" type="number" class="form-control mb-2" placeholder="Prodect Price">
+
+            <label for="prodectCategory" class="fs-5">Prodect Category:</label>
+            <input id="prodectCategory" type="text" class="form-control mb-4" placeholder="Prodect Category">
+
+            <textarea name="Descriptive" id="productDescriptive" class="form-control mb-3" cols="20" rows="3"  placeholder="Prodect Descriptive"></textarea>
+
+             <!-- this 3eda 3la el el elment bt3e -->
+            <input onkeyup="sreach(this.value)" id="prodectSearch" type="text" class="form-control mt-4 text-center fs-5 " placeholder="Search">
+
+             <a class="btn w-25 m-auto mt-4  mb-4 d-block" id="add" onclick="addNewProdect()">add</a>
+             <a class="btn w-25 m-auto mt-3 mb-4 d-none" id="edit" onclick="updateProduct()">update</a>
+               <table class="table text-center mt-2 fs-5 ">
+                
+                  <thead>
+
+                     <tr>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Descriptive</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                     </tr>
+
+                  </thead>
+                  <tbody id="tbody" class="text-white fs-5">
+                    
+                  </tbody>
+
+               </table>
+        </div>
+     <script src="index.js"></script>
+</body>
+</html>

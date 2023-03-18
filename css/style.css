@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+body{
+  background: linear-gradient(rgba(16, 8, 13, 0.8),rgba(16, 8, 13, 0.8),
+  rgba(67, 0, 40, 0.8), rgba(67, 0, 40, 0.8), rgba(67, 0, 40, 0.8), rgba(67, 0, 40, 0.8),rgba(67, 0, 40, 0.8),rgba(16, 8, 13, 0.8));
+  font-family:'Dancing Script', cursive;
+  color: aliceblue;
+}
+
+.container #prodectName,
+.container #prodectprice,
+.container #prodectCategory,
+.container #productDescriptive
+{
+  outline: none;
+  border:none;
+  background:rgba(3, 2, 2, 0.209);
+  box-shadow:inset 2px 5px 10px rgba(0, 0, 0, 0.819);
+  color: rgb(255, 255, 255);
+  padding:7px 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:1.1rem;
+
+}
+
+.container #prodectName,
+.container #prodectprice,
+.container #prodectCategory,
+.container #productDescriptive:focus
+{
+  background:rgba(3, 2, 2, 0.209);
+  text-transform: capitalize;
+}
+
+.container #prodectSearch{
+box-shadow: none;
+border: none;
+background-color: rgb(45, 44, 44);
+color:aliceblue;
+padding:8px 0px;
+text-transform: capitalize;
+}
+.container #prodectSearch::placeholder{
+  color: #790549e6;
+  font-size: larger;
+  font-weight: 700;
+}
+h1{
+  font-size: 4.5rem;
+  font-family:'Dancing Script', cursive;
+  color: aliceblue;
+  animation: neon 5s infinite;
+  padding-top:30px;
+  }
+@keyframes neon {
+  0% ,39%,41%,59%,61%,79%,100%{
+    text-shadow:
+    white 0 0 10px,
+    rgb(251, 4, 148) 0 0 12px,
+    #fb1a9d 0 0 24px,
+    rgb(252, 85, 183) 0 0 36px;
+  }
+  40%,60%,80%{
+    text-shadow: none;
+  }
+}
+
+#add{
+  text-decoration: none;
+  padding: .7rem 3rem;
+  color:aliceblue;
+  text-transform:uppercase;
+  font-family:serif;
+  font-size:x-large;
+  position: relative;
+  overflow: hidden;
+  border:1px solid rgb(251, 4, 148);
+  border-radius:8px;
+  background-image:linear-gradient(to right,#f827a1b2,#280118e6);
+  transition: 0.7s;
+}
+
+#add:hover{
+  box-shadow:1px 1px 10px 10px rgba(251, 4, 148);
+  letter-spacing:5px;
+}
+
+#add:before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:-100px;
+  width:100px;
+  height:100px;
+  background:linear-gradient(120deg,
+  transparent,
+  rgba(251, 4, 148,0.4),
+  transparent);
+  transition: all 650ms;
+}
+#add:hover::before{
+  left:100%;
+}
+
+#edit{
+  text-decoration: none;
+  padding: .4rem 3rem;
+  color:aliceblue;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:x-large;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-image:linear-gradient(to right,#f6e13e,rgba(16, 8, 13, 0.8)) ;
+}
+#edit:before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:-100px;
+  width:100px;
+  height:100px;
+  background:linear-gradient(120deg,
+  transparent,
+  rgb(251, 222, 4),
+  transparent);
+  transition: all 650ms;
+}
+#edit:hover::before{
+  left:100%;
+}
+#Update{
+  text-decoration: none;
+  padding: .4rem 1rem;
+  color:aliceblue;
+  font-size: large;
+  font-family:Arial, Helvetica, sans-serif;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  border-radius:5px;
+  background-image:linear-gradient(to right,#f6e13e,rgba(16, 8, 13, 0.8)) ;
+}
+
+#Update:before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:-100px;
+  width:100%;
+  height:100%;
+  background:linear-gradient(120deg,
+  transparent,
+  rgb(251, 222, 4),
+  transparent);
+  transition: all 650ms;
+}
+#Update:hover::before{
+  left:100%;
+}
+#Delete{
+  text-decoration: none;
+  padding: .4rem 1rem;
+  color:aliceblue;
+  font-size: large;
+  font-family:Arial, Helvetica, sans-serif;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  border-radius:5px;
+  background-image:linear-gradient(to right,#f22323,rgba(16, 8, 13, 0.8)) ;
+}
+
+#Delete:before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:-100px;
+  width:100%;
+  height:100%;
+  background:linear-gradient(120deg,
+  transparent,
+  #f22323,
+  transparent);
+  transition: all 650ms;
+}
+#Delete:hover::before{
+  left:100%;
+}
+
+
+/* RWD => Responsive web design */
+/* be 3ml resize Width => devices*/
+/* media query */
